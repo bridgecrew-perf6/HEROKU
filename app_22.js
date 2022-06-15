@@ -8,9 +8,6 @@ const DBPATH = 'curriculo.db';
 const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-app.listen(process.env.PORT,() => {
-  console.log('Page server running');
-});
 
 /* Definição dos endpoints do sistema*/
 
@@ -87,6 +84,6 @@ app.post('/userdelete', urlencodedParser, (req, res) => {
 });
 
 
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(process.env.PORT,() => {
+  console.log('Page server running');
 });
