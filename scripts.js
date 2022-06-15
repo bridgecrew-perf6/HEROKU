@@ -1,4 +1,4 @@
-api = 'http://127.0.0.1:3022'
+api = 'https://curriculo-giovanna-furlan-gp.herokuapp.com'
 
 window.addEventListener('DOMContentLoaded', event => {
 
